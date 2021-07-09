@@ -1,0 +1,196 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\My project\Two-Neuron
+valu
+Z1 !s100 [PM>`NRP<>eOR[O<FdUFM1
+Z2 IS@az9TnSj8bV9EVAn?XLh0
+Z3 V6;@kFGdWf7_jHDbBQO<fA3
+Z4 dD:\il2203 verilog ver\IL2203-verilog-ver
+Z5 w1625844692
+Z6 8D:\il2203 verilog ver\IL2203-verilog-ver\rtl\alu.v
+Z7 FD:\il2203 verilog ver\IL2203-verilog-ver\rtl\alu.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:\il2203 verilog ver\IL2203-verilog-ver\rtl\alu.v|
+Z10 o-work work -O0
+Z11 !s108 1625858474.681000
+Z12 !s107 D:\il2203 verilog ver\IL2203-verilog-ver\rtl\alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z13 !s100 __jXG1Vf:@_o;EJ5JaRJ53
+Z14 I1B[e=S]Si>PaIGlUc<Kg73
+Z15 VXITe1FfDPIMHC;N5zJGec2
+R4
+Z16 w1624482627
+Z17 8D:/il2203 verilog ver/IL2203-verilog-ver/RTL/ALU.v
+Z18 FD:/il2203 verilog ver/IL2203-verilog-ver/RTL/ALU.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/RTL/ALU.v|
+R10
+Z20 n@a@l@u
+Z21 !s108 1624482645.673000
+Z22 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/RTL/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdatapath
+Z23 !s100 gYQS^TEERNmk23gzIU]B]3
+Z24 IA1EWnIHdEo@]edXfN;TeI2
+Z25 VdYm1fBSQXB3`FMaKM_KTn0
+R4
+Z26 w1625858460
+Z27 8D:\il2203 verilog ver\IL2203-verilog-ver\rtl\datapath.v
+Z28 FD:\il2203 verilog ver\IL2203-verilog-ver\rtl\datapath.v
+L0 1
+R8
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|D:\il2203 verilog ver\IL2203-verilog-ver\rtl\datapath.v|
+R10
+Z30 !s108 1625858474.964000
+Z31 !s107 D:\il2203 verilog ver\IL2203-verilog-ver\rtl\datapath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrf
+Z32 !s100 ^94f6Z5PB3DNROdFB<O5`2
+Z33 I67;<_b_lA1XS?UWa4m<l73
+Z34 V<:FG2_?>B>;_GMj=2OA4H0
+R4
+Z35 w1624900188
+Z36 8D:/il2203 verilog ver/IL2203-verilog-ver/rtl/rf.v
+Z37 FD:/il2203 verilog ver/IL2203-verilog-ver/rtl/rf.v
+L0 1
+R8
+r1
+31
+Z38 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/rtl/rf.v|
+R10
+Z39 !s108 1625858474.805000
+Z40 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/rtl/rf.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_alu
+Z41 !s100 =a6BXVg5kSeG0<@c23WL^3
+Z42 IIngPDScaYo6fe7Bj60UBP2
+Z43 V1XLk3]B7ABd?CInGeQ]@;2
+R4
+Z44 w1624485410
+Z45 8D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu.v
+Z46 FD:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu.v
+L0 2
+R8
+r1
+31
+Z47 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu.v|
+R10
+Z48 !s108 1625858474.749000
+Z49 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_alu1
+!i10b 1
+Z50 !s100 :1QU<m:cz1C7>>V8dkAGB0
+Z51 IA?ofzm6Y3P^=G3MLZdDoz0
+Z52 VLPc[3C2FWG2A@^:aRz48`1
+R4
+Z53 w1625846571
+Z54 8D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu1.v
+Z55 FD:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu1.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1625858475.362000
+!s107 D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu1.v|
+Z56 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_alu1.v|
+!s101 -O0
+R10
+vtb_datapath
+Z57 !s100 8XJXNBF2^BZ;WfiNhoZKn1
+Z58 I5YjT?k::KUQV:IE>j]WFJ2
+Z59 VYzS_Ckzm8mJ2Ao@d89lVO3
+R4
+Z60 w1625087015
+Z61 8D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath.v
+Z62 FD:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath.v
+L0 2
+R8
+r1
+31
+Z63 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath.v|
+R10
+Z64 !s108 1625858475.068000
+Z65 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_datapath_2
+Z66 !s100 JM3KlV5ni1IeCN@h>3M;P0
+Z67 I`0R<GmK1MdN@ioTURI^dc2
+Z68 VTQ<K]kJl6ob@l<h14AkdP0
+R4
+Z69 w1625532822
+Z70 8D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath_2.v
+Z71 FD:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath_2.v
+L0 2
+R8
+r1
+31
+Z72 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath_2.v|
+R10
+Z73 !s108 1625858475.174000
+Z74 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_datapath_2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_datapath_3
+Z75 !s100 <@R>Sinb?4Lh:R>DLKKRe3
+Z76 IccbeFg4NbW8^<:`;Ko2e00
+Z77 V`a7=<NDoSDPoDT4d0Lm]I1
+R4
+Z78 w1625858231
+Z79 8D:\il2203 verilog ver\IL2203-verilog-ver\tb\tb_datapath_3.v
+Z80 FD:\il2203 verilog ver\IL2203-verilog-ver\tb\tb_datapath_3.v
+L0 2
+R8
+r1
+31
+Z81 !s90 -reportprogress|300|-work|work|D:\il2203 verilog ver\IL2203-verilog-ver\tb\tb_datapath_3.v|
+R10
+!i10b 1
+!s85 0
+Z82 !s108 1625858475.266000
+Z83 !s107 D:\il2203 verilog ver\IL2203-verilog-ver\tb\tb_datapath_3.v|
+!s101 -O0
+vtb_rf
+Z84 !s100 Z3hBDCK?>D5_O3?2:fTO:3
+Z85 IgXRA:>;S8DLZ:8MJlTPo51
+Z86 Vllce3D52IDh?SH>i2WEUe1
+R4
+Z87 w1624900283
+Z88 8D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_rf.v
+Z89 FD:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_rf.v
+L0 1
+R8
+r1
+31
+Z90 !s90 -reportprogress|300|-work|work|D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_rf.v|
+R10
+Z91 !s108 1625858474.882000
+Z92 !s107 D:/il2203 verilog ver/IL2203-verilog-ver/tb/tb_rf.v|
+!i10b 1
+!s85 0
+!s101 -O0
