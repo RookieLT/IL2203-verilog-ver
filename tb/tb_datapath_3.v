@@ -21,24 +21,42 @@ initial clk=0;
 always #2 clk=~clk;
 
 initial begin
-    rst=1;
-    #12;
-    rst=0; ie=0; write=0; reada=0; readb=0; en=0; oe=0; bypassa=0; bypassb=0;
+    rst<=1;
+    #10;
+    rst<=0; ie<=0; write<=0; reada<=0; readb<=0; en<=0; oe<=0; bypassa<=0; bypassb<=0;
     #8;
-    ie=1; waddr=3'b000; din=8'h02; write=1;      //write a 2 to reg0
+    ie<=1; waddr<=3'b000; din<=8'h01; write<=1;      //write a 2 to reg0
     #4;
-    waddr=3'b001; din=8'h03;  //write a 3 to reg1
+    waddr<=3'b001; din<=8'h04;  //write a 4 to reg1
     #4;
-    ie=0;write=0;reada=0;readb=0;en=0;oe=0;bypassa=0;bypassb=0;op='b0;
-    din='b0;waddr='b0;ra='b0;rb='b0; //upc=0
+    ie<=0;write<=0;reada<=1;readb<=1;en<=0;oe<=0;bypassa<=0;bypassb<=0;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b001; //upc=1  read reg
     #4;
-    ie=0;write=0;reada=1;readb=1;en=1;oe=0;bypassa=0;bypassb=0;op='b0;
-    din='b0;waddr='b0;ra=3'b000;rb=3'b001; //upc=1
+    ie<=0;write<=0;reada<=1;readb<=0;en<=1;oe<=0;bypassa<=0;bypassb<=1;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b001; //upc=2 perform add
     #4;
-    ie=0;write=1;reada=0;readb=0;en=1;oe=0;bypassa=0;bypassb=1;op=3'b111;
-    din='b0;waddr=3'b011;ra=3'b000;rb=3'b001; //upc=2
+    ie<=0;write<=1;reada<=1;readb<=0;en<=1;oe<=0;bypassa<=0;bypassb<=1;op<=3'b111;
+    din<='b0;waddr<=3'b011;ra<=3'b000;rb<=3'b001; //upc=3 write back pc+1
     #4;
-    ie=0;write=0;reada=0;readb=0;en=0;oe=1;bypassa=0;bypassb=0;op='b0;
-    din='b0;waddr='b0;ra=3'b000;rb=3'b001; //upc=3
+    ie<=0;write<=1;reada<=0;readb<=0;en<=0;oe<=1;bypassa<=0;bypassb<=1;op<='b0;
+    din<='b0;waddr<='b111;ra<=3'b000;rb<=3'b001; //upc=4 output pc write back pc
+    #4;
+    ie<=0;write<=0;reada<=0;readb<=0;en<=0;oe<=0;bypassa<=0;bypassb<=0;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b000; //upc=0 do nothing
+    #4;
+    ie<=0;write<=0;reada<=1;readb<=1;en<=0;oe<=0;bypassa<=0;bypassb<=0;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b001; //upc=1  read reg
+    #4;
+    ie<=0;write<=0;reada<=1;readb<=0;en<=1;oe<=0;bypassa<=0;bypassb<=1;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b001; //upc=2 perform add, read pc
+    #4;
+    ie<=0;write<=1;reada<=1;readb<=0;en<=1;oe<=0;bypassa<=0;bypassb<=1;op<=3'b111;
+    din<='b0;waddr<=3'b011;ra<=3'b000;rb<=3'b001; //upc=3 write back, pc+1
+    #4;
+    ie<=0;write<=1;reada<=0;readb<=0;en<=0;oe<=1;bypassa<=0;bypassb<=1;op<='b0;
+    din<='b0;waddr<='b111;ra<=3'b000;rb<=3'b001; //upc=4 output pc write back pc
+    #4;
+    ie<=0;write<=0;reada<=0;readb<=0;en<=0;oe<=0;bypassa<=0;bypassb<=0;op<='b0;
+    din<='b0;waddr<='b0;ra<=3'b000;rb<=3'b000; //upc=0 do nothing
 end
 endmodule

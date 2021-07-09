@@ -20,8 +20,9 @@ module datapath #(parameter M=3,
         assign wd=(ie==1) ? din:sum;
         assign dout=(oe==1) ? sum:'bx; 
         assign a=(bypassa==1) ? offset:qa;
-        assign b=(bypassb==1) ? offset:qb;
-
+        //assign b=(bypassb==1) ? offset:qb;
+        assign b=qb;
+        
         rf #(M,N) rf1(rst,clk,wd,waddr,write,gated_ra,gated_reada,rb,readb,qa,qb);
         alu #(N) alu1(a,b,op,clk,en,rst,sum,o_flag,z_flag,n_flag);
 endmodule

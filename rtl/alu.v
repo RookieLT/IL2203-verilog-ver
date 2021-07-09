@@ -30,6 +30,26 @@ module alu #(parameter n = 8)(
         rz_flag=(|psum==0) ? 1:0;
         rn_flag=psum[n-1];
     end
+    /*always @(psum,rz_flag,rn_flag,ro_flag,rst,en)begin
+        if(rst == 1) begin
+            sum = 'b0;
+            o_flag = 0;
+            z_flag = 0;
+            n_flag = 0;
+        end
+        else if(en == 1) begin
+            sum = psum;
+            o_flag = ro_flag;
+            z_flag = rz_flag;
+            n_flag = rn_flag;
+        end
+        else begin
+            sum = sum;
+            o_flag = o_flag;
+            z_flag = z_flag;
+            n_flag = n_flag;
+        end
+    end*/
     always@(posedge clk , posedge rst)begin
         if(rst == 1) begin
             sum <= 'b0;
